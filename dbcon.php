@@ -3,7 +3,7 @@ $servername = "localhost";
 $username = "root";
 $password = "";
 $dbname = "bookflight";
-$port = 3306;
+$port = 3307;
 
 // Create connection
 $conn = mysqli_connect($servername, $username, $password, $dbname, $port);
