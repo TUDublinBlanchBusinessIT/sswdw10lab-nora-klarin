@@ -2,26 +2,29 @@
 include("finalStepHeader.html");
 
 //translate the comments below into PHP code underneath each comment
+session_start();
 
-//start a session
+echo $_SESSION['passengerFN'];
 
 //echo the passenger's firstname from the appropriate session variable
 
 echo "<BR>";
 
 //echo the passenger's surname from the appropriate session variable
-
+echo $_SESSION['passengerSN'];
 echo "<BR>";
 
-// if the luggage session variable is on
+if ($_SESSION['luggage']==1){
 
-    //echo the amount of bags under ten kilos the passenger is bringing
+  //echo the amount of bags under ten kilos the passenger is bringing
+  echo $_SESSION['subTenKG'];
+
+  echo "<BR>";
+
+}
     
-    echo "<BR>";
     
-    //echo the amount of bags over ten kilos the passenger is bringing
     
-//end if block
 
 ?>
 </h4></div></div>
